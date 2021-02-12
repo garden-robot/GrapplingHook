@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class GenericHookScript : MonoBehaviour
 {
+    public LineRenderer line;
+    public Vector3 newPosition;
+    public Vector3 lineStart;
     public Vector3 originalPosition;
     public GameObject hook;
+    public GameObject gun;
 
     private bool retract = false;
 
@@ -16,7 +20,12 @@ public class GenericHookScript : MonoBehaviour
     {
         //This is so we know what place to pull the hook back to at the end of any action
         //it is referenceable everywhere
+        
         originalPosition = hook.transform.localPosition;
+        line.enabled = true;
+        line.positionCount = 2;
+       
+        
     }
 
     // Update is called once per frame
@@ -29,11 +38,19 @@ public class GenericHookScript : MonoBehaviour
 
         if (retract == true)
         {
-            hook.transform.localPosition = Vector3.MoveTowards(
+            if (originalPosition == hook.transform.localPosition)
+            {
+                retract = false;
+            }
+           hook.transform.localPosition = Vector3.MoveTowards(
                 hook.transform.localPosition,
                 originalPosition,
                 Time.deltaTime * speed);
         }
-        
+
+        newPosition = hook.transform.position;
+        lineStart = gun.transform.position;
+        line.SetPosition(0, lineStart);
+        line.SetPosition(1, newPosition);
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Alessia\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Alessia\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_GrapplingHookMechanic.544370548.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Alessia\Desktop\GrapplingHook\GrapplingHookMechanic" t="IncludeRecursive">
+    <e p="C:\Users\beaum\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\beaum\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_GrapplingHookMechanic.-891230213.00" t="ExcludeRecursive" />
+    <e p="C:\Users\beaum\Documents\GitHub\GrapplingHook\GrapplingHookMechanic" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="First Person Drifter Controller" t="Include">
@@ -24,8 +24,10 @@
             </e>
           </e>
         </e>
-        <e p="GenericHookScript.cs" t="Include" />
-        <e p="HookMoveableObjects.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="GenericHookScript.cs" t="Include" />
+          <e p="HookMoveableObjects.cs" t="Include" />
+        </e>
       </e>
       <e p="GrapplingHookMechanic.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
