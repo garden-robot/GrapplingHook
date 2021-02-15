@@ -9,24 +9,27 @@ public class HookMoveableObjects : MonoBehaviour
     public Camera cam;
     
     public GameObject hook;
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    private GameObject temp;
+    
+    
     void FixedUpdate()
     {
+        //setting the direction of the hook
         Vector3 fwd = cam.transform.TransformDirection(Vector3.forward) * 30;
+        
+        //debugging so I can see where the hook is in the editor
         Debug.DrawRay(transform.position, fwd, Color.red);
         
+        
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        //This is to pick up/snag the hookable objects with the grappling hook 
         if (Input.GetMouseButtonDown(0) && GenericHookScript.retract == false && hook.transform.childCount == 0)
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            /*RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);*/
 
                 
                 if (Physics.Raycast(ray, out hit))
@@ -43,13 +46,13 @@ public class HookMoveableObjects : MonoBehaviour
                     }
                 }
         }
-
+    
+        //what to do when the hook is in the OG position again
         if (GenericHookScript.originalPosition == hook.transform.localPosition && hook.transform.childCount == 1)
         {
             hook.transform.GetChild(0).GetComponent<Collider>().enabled = true;
             hook.transform.DetachChildren();
             hook.GetComponent<MeshRenderer>().enabled = false;
-
         }
         
     }
