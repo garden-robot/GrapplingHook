@@ -7,11 +7,12 @@ public class GenericHookScript : MonoBehaviour
     public LineRenderer line;
     public Vector3 newPosition;
     public Vector3 lineStart;
-    public Vector3 originalPosition;
+    public static Vector3 originalPosition;
+    public  Vector3 originalPositionINSPECT;
     public GameObject hook;
     public GameObject gun;
 
-    private bool retract = false;
+    public static bool retract = false;
 
     public float speed = 1;
     
@@ -24,13 +25,14 @@ public class GenericHookScript : MonoBehaviour
         originalPosition = hook.transform.localPosition;
         line.enabled = true;
         line.positionCount = 2;
-       
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        originalPositionINSPECT = originalPosition;
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             retract = true;

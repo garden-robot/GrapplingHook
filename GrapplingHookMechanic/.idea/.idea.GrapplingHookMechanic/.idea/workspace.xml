@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a7d842d-4c10-4086-b280-e8ac8e29a92f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenericHookScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GenericHookScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="4a7d842d-4c10-4086-b280-e8ac8e29a92f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,14 +10,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../PhysicsGame/Physics-Game/Assets/Scripts/LineScript.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/HookMoveableObjects.cs" />
       <option value="$PROJECT_DIR$/Assets/GenericHookScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GenericHookScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HookMoveableObjects.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oMN5RGKoXvb1UZTEzCfArb1a0m" />
@@ -75,6 +67,7 @@
       <updated>1613092316742</updated>
       <workItem from="1613092317943" duration="1485000" />
       <workItem from="1613093965756" duration="2627000" />
+      <workItem from="1613407913586" duration="2770000" />
     </task>
     <servers />
   </component>
