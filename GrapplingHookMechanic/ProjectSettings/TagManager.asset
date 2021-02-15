@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HookableObjects
   - FishingSpot
+  - FishingHook
   layers:
   - Default
   - TransparentFX

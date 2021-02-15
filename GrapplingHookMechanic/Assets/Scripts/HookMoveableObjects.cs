@@ -13,7 +13,15 @@ public class HookMoveableObjects : MonoBehaviour
     private GameObject temp;
 
     public GameObject player;
+
     
+    //Fishing variables
+    private RigidbodyConstraints originalConstraints;
+
+    public GameObject fishingHook;
+
+    public Rigidbody rbfishingHook;
+  
     void FixedUpdate()
     {
         //setting the direction of the hook
@@ -32,26 +40,43 @@ public class HookMoveableObjects : MonoBehaviour
             /*RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);*/
 
-                
-                if (Physics.Raycast(ray, out hit))
-                {
 
-                    Debug.Log( hit.collider.gameObject.name);
-                    
-                    if (hit.collider != null && hit.collider.gameObject.tag == "HookableObjects")
-                    {
-                        hook.transform.parent = null;
-                        hook.GetComponent<MeshRenderer>().enabled = true;
-                        hook.transform.position = hit.collider.gameObject.transform.position;
-                        hit.collider.transform.SetParent(hook.transform);
-                        hit.collider.enabled = false;
-                    }
+            if (Physics.Raycast(ray, out hit))
+            {
+
+                Debug.Log(hit.collider.gameObject.name);
+
+                if (hit.collider != null && hit.collider.gameObject.tag == "HookableObjects")
+                {
+                    hook.transform.parent = null;
+                    hook.GetComponent<MeshRenderer>().enabled = true;
+                    hook.transform.position = hit.collider.gameObject.transform.position;
+                    hit.collider.transform.SetParent(hook.transform);
+                    hit.collider.enabled = false;
                 }
+
+                //FishingScript!
+                if (hit.collider != null && hit.collider.gameObject.tag == "FishingSpot")
+                {
+                    hook.transform.parent = null;
+
+                    player.GetComponent<CharacterController>().enabled = false;
+                    hook.GetComponent<MeshRenderer>().enabled = true;
+                    hook.transform.position = hit.collider.gameObject.transform.position;
+                    hit.collider.gameObject.GetComponent<FishingSpot>().isFishing = true;
+                   
+                   
+                }
+            
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
+          
             hook.transform.parent = player.transform;
+            player.GetComponent<CharacterController>().enabled = true;
+            
         }
         
         //what to do when the hook is in the OG position again
