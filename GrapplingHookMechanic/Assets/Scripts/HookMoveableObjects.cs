@@ -11,7 +11,8 @@ public class HookMoveableObjects : MonoBehaviour
     public GameObject hook;
 
     private GameObject temp;
-    
+
+    public GameObject player;
     
     void FixedUpdate()
     {
@@ -39,6 +40,7 @@ public class HookMoveableObjects : MonoBehaviour
                     
                     if (hit.collider != null && hit.collider.gameObject.tag == "HookableObjects")
                     {
+                        hook.transform.parent = null;
                         hook.GetComponent<MeshRenderer>().enabled = true;
                         hook.transform.position = hit.collider.gameObject.transform.position;
                         hit.collider.transform.SetParent(hook.transform);
@@ -46,7 +48,12 @@ public class HookMoveableObjects : MonoBehaviour
                     }
                 }
         }
-    
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            hook.transform.parent = player.transform;
+        }
+        
         //what to do when the hook is in the OG position again
         if (GenericHookScript.originalPosition == hook.transform.localPosition && hook.transform.childCount == 1)
         {
