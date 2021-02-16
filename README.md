@@ -1,4 +1,5 @@
 # GrapplingHook
+#By: Alessia Ianni- Palarchio, Beau Mcgee, Jude Pinto
 A grappling hook mechanic for Level Design
 
 
@@ -36,5 +37,7 @@ Objects you want the player to grapple towards should be tagged with the tag 'St
 
 All objects (grabbable and grapple walls) should be kinematic to avoid physics collision causing problems. :)
 
+Enemy game objects should be tagged with the tag "Enemy" and should have the EnemyHealth.cs script component attached. This script auto generates a healthbar for testing purposes at the upper left hand corner of the screen, and can be damaged with the grappling hook. The damage value can be set via the "damage" int variable in HookableObjects.
 
-*JUDE PLEASE INSERT HOW TO SET UP FISHING AND ENEMY USE HERE*
+To fish, tag a fishing spot with the "FishingSpot" tag. Attach the "FishingSpot.cs" script component to this object. When aiming the grappling hook at water, press R to start fishing and R to reel in. You can customize the kinds of fish you can reel in by creating your own fish gameObjects and adding them to the Fish var (a list of game objects) in the FishingSpot.cs component. You can also change the behavior of fishing (randomization, rarity, etc.) in OnTriggerStay() in  FishingSpot.cs.
+
