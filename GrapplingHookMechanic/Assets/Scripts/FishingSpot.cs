@@ -13,15 +13,13 @@ public class FishingSpot: MonoBehaviour
     public List<GameObject> fishList;
 
     // Start is called before the first frame update
-    void Start()
-    {
 
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "FishingHook")
         {
+            Fish = null;
             isFishing = true;
             Debug.Log("Begin fishing");
         }
@@ -34,6 +32,31 @@ public class FishingSpot: MonoBehaviour
             Debug.Log("Still fishing");
         }
 
+       
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+
+        if (isCaught)
+        {
+            Debug.Log("Caught a fish! Glub glub!");
+
+            Debug.Log(Fish);
+
+        }
+        else
+        {
+            Debug.Log("No fishies. :(");
+
+        }
+
+        isCaught = false;
+
+    }
+
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.R))
         {
             isFishing = false;
@@ -44,22 +67,5 @@ public class FishingSpot: MonoBehaviour
             isCaught = randomCatch;
             Fish = fishList[randomValue];
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-            
-            if (isCaught)
-            {
-                Debug.Log("Caught a fish! Glub glub!");
-                Debug.Log(Fish);
-           
-            }
-            else
-            {
-                Debug.Log("No fishies. :(");
-            }
-      
-
     }
 }

@@ -21,6 +21,10 @@ public class HookMoveableObjects : MonoBehaviour
     public GameObject fishingHook;
 
     public Rigidbody rbfishingHook;
+
+
+    //Enemy variables
+    public int damageDealt = 10;
   
     void FixedUpdate()
     {
@@ -64,20 +68,27 @@ public class HookMoveableObjects : MonoBehaviour
                     hook.GetComponent<MeshRenderer>().enabled = true;
                     hook.transform.position = hit.collider.gameObject.transform.position;
                     hit.collider.gameObject.GetComponent<FishingSpot>().isFishing = true;
-                   
-                   
+
                 }
-            
+
+                //Enemy Script!
+                if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
+                {
+                    hook.transform.parent = null;
+
+                    //hook.GetComponent<MeshRenderer>().enabled = true;
+                    hook.transform.position = hit.collider.gameObject.transform.position;
+                    hit.collider.gameObject.GetComponent<EnemyHealth>().AdjustCurrentHealth(damageDealt);
+
+                    
+
+
+                }
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-          
-            hook.transform.parent = player.transform;
-            player.GetComponent<CharacterController>().enabled = true;
-            
-        }
+      
+
         
         //what to do when the hook is in the OG position again
         if (GenericHookScript.originalPosition == hook.transform.localPosition && hook.transform.childCount == 1)
@@ -87,5 +98,17 @@ public class HookMoveableObjects : MonoBehaviour
             hook.GetComponent<MeshRenderer>().enabled = false;
         }
         
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+
+            hook.transform.parent = player.transform;
+
+            player.GetComponent<CharacterController>().enabled = true;
+
+        }
     }
 }
