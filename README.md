@@ -15,7 +15,7 @@ To release, press space.
 
 *enemy how do here*
 
-#How to use this asset
+## How to use this asset
 
 'Grappling Hook Gun', 'Grappling Hook Hook', and 'FishingHook' should all be separate children of your player character. 
 Objects you want the player to be able to pull towards themself should be tagged with the tag 'HookableObjects'. 
