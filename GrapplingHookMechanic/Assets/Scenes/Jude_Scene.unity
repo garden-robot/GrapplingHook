@@ -191,6 +191,144 @@ Camera:
   m_PrefabInstance: {fileID: 769530472}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &365767692
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365767693}
+  - component: {fileID: 365767695}
+  - component: {fileID: 365767694}
+  - component: {fileID: 365767696}
+  - component: {fileID: 365767697}
+  - component: {fileID: 365767698}
+  m_Layer: 2
+  m_Name: FishingHook
+  m_TagString: FishingHook
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &365767693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365767692}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.36000013, z: 1.4}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 1199671263}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &365767694
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365767692}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &365767695
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365767692}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a132c420a90d39541b2b471acb90f46c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &365767696
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365767692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1818360608 &365767697
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365767692}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: -0.36000013, z: 1.4}
+  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 886334657}
+    weight: 1
+--- !u!54 &365767698
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365767692}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &396034893
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -600,7 +738,14 @@ MonoBehaviour:
   player: {fileID: 1199671257}
   fishingHook: {fileID: 365767692}
   rbfishingHook: {fileID: 0}
+<<<<<<< HEAD
   damageDealt: 10
+=======
+<<<<<<< HEAD
+  damageDealt: 10
+=======
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 --- !u!114 &606520020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,7 +970,15 @@ Transform:
   - {fileID: 2096259607}
   - {fileID: 2138377322}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+<<<<<<< HEAD
+  m_RootOrder: 3
+=======
+  m_RootOrder: 6
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1191,8 +1344,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218019916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0.7, y: 0.95, z: -15.3}
   m_LocalScale: {x: 36.25088, y: 1.0169728, z: 12.103274}
+=======
+<<<<<<< HEAD
+  m_LocalPosition: {x: 0.7, y: 0.95, z: -15.3}
+  m_LocalScale: {x: 36.25088, y: 1.0169728, z: 12.103274}
+=======
+  m_LocalPosition: {x: 0.7, y: 0.81, z: -15.3}
+  m_LocalScale: {x: 36.25088, y: 2.2582, z: 12.103274}
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1327,6 +1490,23 @@ MonoBehaviour:
   maxHealth: 100
   curHealth: 100
   healthBarLength: 0
+<<<<<<< HEAD
+=======
+=======
+  m_GameObject: {fileID: 1218019916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a921625e738a547a477277a0855b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFishing: 0
+  Fish: {fileID: 0}
+  fishList:
+  - {fileID: 514385887}
+  - {fileID: 2096259606}
+  - {fileID: 2138377321}
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 --- !u!1 &1622257764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1602,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 --- !u!1 &1883369914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1701,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 --- !u!1 &2096259606
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,14 @@ TagManager:
   - HookableObjects
   - FishingSpot
   - FishingHook
+<<<<<<< HEAD
   - Enemy
+=======
+<<<<<<< HEAD
+  - Enemy
+=======
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
   layers:
   - Default
   - TransparentFX

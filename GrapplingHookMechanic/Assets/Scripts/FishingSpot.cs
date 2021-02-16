@@ -13,13 +13,31 @@ public class FishingSpot: MonoBehaviour
     public List<GameObject> fishList;
 
     // Start is called before the first frame update
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+    void Start()
+    {
+
+    }
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "FishingHook")
         {
+<<<<<<< HEAD
             Fish = null;
+=======
+<<<<<<< HEAD
+            Fish = null;
+=======
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
             isFishing = true;
             Debug.Log("Begin fishing");
         }
@@ -32,6 +50,10 @@ public class FishingSpot: MonoBehaviour
             Debug.Log("Still fishing");
         }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
        
     }
 
@@ -57,6 +79,11 @@ public class FishingSpot: MonoBehaviour
 
     void Update()
     {
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
         if (Input.GetKeyDown(KeyCode.R))
         {
             isFishing = false;
@@ -68,4 +95,27 @@ public class FishingSpot: MonoBehaviour
             Fish = fishList[randomValue];
         }
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+    private void OnTriggerExit(Collider other)
+    {
+            
+            if (isCaught)
+            {
+                Debug.Log("Caught a fish! Glub glub!");
+                Debug.Log(Fish);
+           
+            }
+            else
+            {
+                Debug.Log("No fishies. :(");
+            }
+      
+
+    }
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 }

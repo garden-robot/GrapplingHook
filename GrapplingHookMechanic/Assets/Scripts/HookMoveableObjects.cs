@@ -21,10 +21,19 @@ public class HookMoveableObjects : MonoBehaviour
     public GameObject fishingHook;
 
     public Rigidbody rbfishingHook;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
 
 
     //Enemy variables
     public int damageDealt = 10;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
   
     void FixedUpdate()
     {
@@ -51,6 +60,10 @@ public class HookMoveableObjects : MonoBehaviour
                 Debug.Log(hit.collider.gameObject.name);
 
                 if (hit.collider != null && hit.collider.gameObject.tag == "HookableObjects")
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
                 {
                     hook.transform.parent = null;
                     hook.GetComponent<MeshRenderer>().enabled = true;
@@ -89,6 +102,42 @@ public class HookMoveableObjects : MonoBehaviour
 
       
 
+<<<<<<< HEAD
+=======
+=======
+                {
+                    hook.transform.parent = null;
+                    hook.GetComponent<MeshRenderer>().enabled = true;
+                    hook.transform.position = hit.collider.gameObject.transform.position;
+                    hit.collider.transform.SetParent(hook.transform);
+                    hit.collider.enabled = false;
+                }
+
+                //FishingScript!
+                if (hit.collider != null && hit.collider.gameObject.tag == "FishingSpot")
+                {
+                    hook.transform.parent = null;
+
+                    player.GetComponent<CharacterController>().enabled = false;
+                    hook.GetComponent<MeshRenderer>().enabled = true;
+                    hook.transform.position = hit.collider.gameObject.transform.position;
+                    hit.collider.gameObject.GetComponent<FishingSpot>().isFishing = true;
+                   
+                   
+                }
+            
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+          
+            hook.transform.parent = player.transform;
+            player.GetComponent<CharacterController>().enabled = true;
+            
+        }
+>>>>>>> main
+>>>>>>> parent of aa90f09... Merge remote-tracking branch 'origin/main' into main
         
         //what to do when the hook is in the OG position again
         if (GenericHookScript.originalPosition == hook.transform.localPosition && hook.transform.childCount == 1)
