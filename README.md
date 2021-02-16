@@ -26,6 +26,8 @@ To release, press space.
 
 ## How to use this asset
 
+The aiming reticle canvas is just to know the point you are aiming at, and is recommended, but not necessary. 
+
 'Grappling Hook Gun', 'Grappling Hook Hook', and 'FishingHook' should all be separate children of your player character.
 
 Objects you want the player to be able to pull towards themself should be tagged with the tag 'HookableObjects'. 
