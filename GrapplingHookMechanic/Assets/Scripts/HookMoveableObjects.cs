@@ -54,9 +54,9 @@ public class HookMoveableObjects : MonoBehaviour
                 {
                     hook.transform.parent = null;
                     hook.GetComponent<MeshRenderer>().enabled = true;
-                    hook.transform.position = hit.collider.gameObject.transform.position;
+                    hook.transform.position = hit.point;
                     hit.collider.transform.SetParent(hook.transform);
-                    hit.collider.enabled = false;
+                    //hit.collider.enabled = false;
                 }
 
                 //FishingScript!

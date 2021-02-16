@@ -8,6 +8,7 @@ TagManager:
   - FishingSpot
   - FishingHook
   - Enemy
+  - StableObjects
   layers:
   - Default
   - TransparentFX
