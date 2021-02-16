@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a7d842d-4c10-4086-b280-e8ac8e29a92f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrapplingHookMechanic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alessia_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alessia_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HookMoveableObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HookMoveableObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerPull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerPull.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
       <workItem from="1613092317943" duration="1485000" />
       <workItem from="1613093965756" duration="2627000" />
       <workItem from="1613407913586" duration="6538000" />
-      <workItem from="1613447634579" duration="4874000" />
+      <workItem from="1613447634579" duration="6153000" />
     </task>
     <servers />
   </component>

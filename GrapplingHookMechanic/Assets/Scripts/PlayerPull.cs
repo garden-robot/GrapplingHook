@@ -20,6 +20,10 @@ public class PlayerPull : MonoBehaviour
 
     private string hitObj;
 
+ 
+
+
+
 
 
     void FixedUpdate()
@@ -81,11 +85,10 @@ public class PlayerPull : MonoBehaviour
             {
                 pulled = false;
             }
-            player.transform.parent = hook.transform;
             player.GetComponent<CharacterController>().enabled = false;
-            player.transform.localPosition = Vector3.MoveTowards(
-                player.transform.localPosition,
-                new Vector3(0f,0f,-1.5f), 
+            player.transform.position = Vector3.MoveTowards(
+                player.transform.position,
+                 hook.transform.position + new Vector3(0f,0f,-1.5f), 
                 Time.deltaTime * speed);
             if (Input.GetKeyDown(KeyCode.Space))
             {
