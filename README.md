@@ -1,23 +1,24 @@
 # GrapplingHook
 A grappling hook mechanic for Level Design
 
-## What do we want to do with the hook? 
+## What Can The Grappling Hook Do?
 
-[these have been reoganized hence the numbering]
+Click to 'shoot' the hook at possible objects. 
 
-1. Pull objects closer to you - Alessia 
-5. Drag items (combine with number one) - Alessia
+Press R to retract the hook. 
+If the hook is attached to an object, the object will come to you! 
+If the hook is attached to a wall, the hook will detach and return.
+If you are fishing, reel in your fish!
 
-2. Shoot the hook to pull yourself to location (fast motion) - Beau
+When you have hooked a wall, press F to pull yourself to the location!
+To release, press space.
 
+*enemy how do here*
 
-4. Fishing/dredge up items by dropping the hook - Jude
-6. HIT PEOPLE (or things) WITH IT (respectfully) - Jude
+#How to use this asset
 
-
-
-3. Swing on hook :eyes: (comebine with number two) [hard - physics]
-7. Rappel down? (slow motion - same hook points you can use to go up?) [less hard but...not as needed]
-
-
-testing
+'Grappling Hook Gun', 'Grappling Hook Hook', and 'FishingHook' should all be separate children of your player character. 
+Objects you want the player to be able to pull towards themself should be tagged with the tag 'HookableObjects'. 
+Objects you want the player to grapple towards should be tagged with the tag 'StableObjects'.
+All objects (grabbable and grapple walls) should be kinematic to avoid physics collision causing problems. :)
+*JUDE PLEASE INSERT HOW TO SET UP FISHING AND ENEMY USE HERE*
